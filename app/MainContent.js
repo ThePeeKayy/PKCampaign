@@ -31,7 +31,7 @@ const MainContent = () => {
             
             <div className='flex flex-col items-center gap-y-4'>
                 <h1 className="max-w-2xl text-5xl font-bold tracking-tight text-gray-900 lg:col-span-2 xl:col-auto">
-                    Who am I
+                    Who I am
                 </h1>
                 <Image src={img2} className='rounded-full sm:hidden block mt-8' height={165} width={170}/>
                 <div className="mt-[40px] max-w-xl xl:col-end-1 xl:row-start-1 ring-[2px] ring-gray-100 p-10 rounded-xl shadow-lg">
