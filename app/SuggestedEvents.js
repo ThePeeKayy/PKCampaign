@@ -15,6 +15,7 @@ const timeline = [
     date: 'Oct 1-4',
     icon: CiBowlNoodles,
     iconBackground: 'bg-orange-500',
+    target: 'Introducing the new house comm, and get to try out a plethora of every student\'s soulfood'
   },
   {
     id: 2,
@@ -22,6 +23,7 @@ const timeline = [
     date: 'Oct 14-18',
     icon: HiOutlineAcademicCap,
     iconBackground: 'bg-blue-500',
+    target: 'Find your academic soulmate(s) you want to grow with'
   },
   
   {
@@ -37,6 +39,7 @@ const timeline = [
     date: 'Nov 11-15',
     icon: RiSpeakLine ,
     iconBackground: 'bg-purple-500',
+    target: 'Learn the art of deception and try the trendiest games!', 
   },
   {
     id: 5,
@@ -44,6 +47,7 @@ const timeline = [
     date: 'Nov 26-29',
     icon: PiCookingPot,
     iconBackground: 'bg-orange-500',
+    target: 'Showcase your team\'s BEST hotpot skills and share the joy with others',
   },
   
   {
@@ -68,13 +72,14 @@ function classNames(...classes) {
 
 export default function SuggestedEvents() {
   return (
-    <div className="flex justify-evenly gap-y-10 flex-col sm:flex-row items-center gap-x-4 pb-16 px-8">
+    <div className="flex justify-evenly gap-y-10 flex-col sm:flex-row items-center gap-x-4 py-16 px-8">
       <div>
         <h1 className="-z-20 max-w-2xl text-4xl font-bold tracking-tight text-gray-900 lg:col-span-2 xl:col-auto">
             Suggested Activities
         </h1>
         <h3 className="-z-20 mt-2 max-w-2xl text-lg tracking-tight text-gray-900 lg:col-span-2 xl:col-auto">
-          I also plan to continue care bear gummy bear in liaison with Sentinel House captain to continue the spirit of gifting 
+          These are some proposed activities and possible date ranges for the near future. 
+          I also plan to continue <i>Care Bear Gummy Bear</i> in liaison with Sentinel House captain to continue the spirit of gifting 
         </h3>
       </div>
       <ul role="list" className="-z-20 -mb-8">
@@ -97,11 +102,11 @@ export default function SuggestedEvents() {
                 </div>
                 <div className="flex min-w-0 flex-1 justify-between space-x-4 pt-1.5">
                   <div>
-                    <p className="text-sm text-gray-500">
+                    <p className="text-sm font-semibold text-gray-900">
                       {event.content}{' '}
-                      <a href={event.href} className="font-medium text-gray-900">
+                      <p className=" text-gray-600 font-normal">
                         {event.target}
-                      </a>
+                      </p>
                     </p>
                   </div>
                   <div className="whitespace-nowrap text-right text-sm text-gray-500">
