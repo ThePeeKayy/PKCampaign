@@ -1,10 +1,10 @@
-import { CheckIcon, HandThumbUpIcon, UserIcon } from '@heroicons/react/20/solid'
 import { CiBowlNoodles } from "react-icons/ci";
 import { HiOutlineAcademicCap } from "react-icons/hi2";
 import { GiMagicLamp } from "react-icons/gi";
-import { MdOutlinePets } from "react-icons/md";
 import { PiCookingPot } from "react-icons/pi";
 import { RiRedPacketLine } from "react-icons/ri";
+import { RiSpeakLine } from "react-icons/ri";
+import { FaMoon, FaStar } from 'react-icons/fa';
 
 
 
@@ -33,9 +33,9 @@ const timeline = [
   },
   {
     id: 4,
-    content: 'Pet Gathering / Feeding Party',
+    content: 'Bluff fiesta (e.g identifying impostor chef, lyrics, word etc)',
     date: 'Nov 11-15',
-    icon: MdOutlinePets,
+    icon: RiSpeakLine ,
     iconBackground: 'bg-purple-500',
   },
   {
@@ -53,6 +53,13 @@ const timeline = [
     icon: RiRedPacketLine,
     iconBackground: 'bg-red-500',
   },
+  {
+    id: 7,
+    content: 'Hari Raya',
+    date: 'Mar 31',
+    icon: FaMoon,
+    iconBackground: 'bg-green-200',
+  },
 ]
 
 function classNames(...classes) {
@@ -62,9 +69,14 @@ function classNames(...classes) {
 export default function SuggestedEvents() {
   return (
     <div className="flex justify-evenly gap-y-10 flex-col sm:flex-row items-center gap-x-4 pb-16 px-8">
-      <h1 className="-z-20 max-w-2xl text-4xl font-bold tracking-tight text-gray-900 lg:col-span-2 xl:col-auto">
-          Suggested Activities
-      </h1>
+      <div>
+        <h1 className="-z-20 max-w-2xl text-4xl font-bold tracking-tight text-gray-900 lg:col-span-2 xl:col-auto">
+            Suggested Activities
+        </h1>
+        <h3 className="-z-20 mt-2 max-w-2xl text-lg tracking-tight text-gray-900 lg:col-span-2 xl:col-auto">
+          I also plan to continue care bear gummy bear in liaison with Sentinel House captain to continue the spirit of gifting 
+        </h3>
+      </div>
       <ul role="list" className="-z-20 -mb-8">
         {timeline.map((event, eventIdx) => (
           <li key={event.id}>
